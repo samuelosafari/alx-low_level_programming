@@ -1,26 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - Prints the add of the fibonacci numbers
+ * main - prints the first fibo numbers starting with 1 and 2
+ * followed by a new line
  *
  * Return: Always 0
  */
 int main(void)
 {
-	int c;
+	log int i, j, k, next;
 
-	log int n1, n2, fn;
+	j = 1;
 
-	n1 = 1;
-	n2 = 2;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 48; c++;)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		fn = n1 + n2;
-		printf(", %ld", fn);
-		n1 = n2;
-		n2 = fn;
+		if (j != 20365011074)
+		{
+			printf("%ld, ", j);
+		} else
+		{
+			printf(""%ld\n", j);
+		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("\n");
+
 	return (0);
 }
